@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1253,3896" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ubia="clr-namespace:UiPath.Box.IntegrationService.Activities;assembly=UiPath.Box.IntegrationService.Activities" xmlns:ubic="clr-namespace:UiPath.Box.IntegrationService.Client;assembly=UiPath.Box.IntegrationService" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uibi="http://schemas.uipath.com/workflow/infrastructure/baf/uibi" xmlns:uiisi="http://schemas.uipath.com/workflow/infrastructure/is/uiisi" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="831.2,3633.6" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ubia="clr-namespace:UiPath.Box.IntegrationService.Activities;assembly=UiPath.Box.IntegrationService.Activities" xmlns:ubic="clr-namespace:UiPath.Box.IntegrationService.Client;assembly=UiPath.Box.IntegrationService" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uibi="http://schemas.uipath.com/workflow/infrastructure/baf/uibi" xmlns:uiisi="http://schemas.uipath.com/workflow/infrastructure/is/uiisi" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="35">
       <x:String>System.Activities</x:String>
@@ -80,7 +80,7 @@
       <AssemblyReference>System.Collections</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="602,3831" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="606.4,3568.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="ubic:Files" Name="fileInfo" />
       <Variable x:TypeArguments="ubic:GetFilesGet_shared_linkResponse" Name="response" />
@@ -95,9 +95,9 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ubia:Search BusinessEntityName="Search for content" ConfiguredBusinessEntity="Search_for_content" ConnectionId="230e9c06-7377-ed11-ac20-0050f29e0988" Connector="uipath-box-box" CrudOperation="Action" DesignConnectionEnabled="True" DisplayName="Search for Content" sap:VirtualizedContainerService.HintSize="540,313" sap2010:WorkflowViewState.IdRef="Search_1" UseConnectionService="True">
+    <ubia:Search BusinessEntityName="Search for content" ConfiguredBusinessEntity="Search_for_content" ConnectionId="b090810c-7d6f-ec11-94f6-dc984004a28b" Connector="uipath-box-box" CrudOperation="Action" DesignConnectionEnabled="True" DisplayName="Search for Content" sap:VirtualizedContainerService.HintSize="544,132.8" sap2010:WorkflowViewState.IdRef="Search_1" UseConnectionService="True">
       <ubia:Search.BusinessEntity>
-        <uibi:BusinessEntity Name="Search_for_content">
+        <uibi:BusinessEntity Metadata="{x:Reference __ReferenceID0}" Name="Search_for_content">
           <uibi:BusinessEntity.AllFields>
             <scg:List x:TypeArguments="uibi:EntityField" Capacity="22">
               <uiisi:OperationEntityField x:TypeArguments="x:Int32" ArgumentDirection="In" ArgumentType="x:Int32" DataType="Int32" Description="The maximum number of records to return." DisplayName="Max Records" FormDataType="ExpressionTextBox" IsChildEntityField="False" IsCustomField="False" IsDefault="False" IsDeletable="False" IsHidden="True" IsIdField="False" IsMandatory="True" IsSelected="False" Location="Undefined" Name="maximumRecordsReturned" ShouldFilterOnChange="False" />
@@ -146,16 +146,17 @@
             </scg:List>
           </uibi:BusinessEntity.AllFields>
           <uibi:BusinessEntity.EntityMetadata>
-            <uibi:EntityMetadata Metadata="{x:Reference __ReferenceID0}" DisplayName="Search for content" EligibleOperations="32" IsCustomEntity="False" Name="Search_for_content" />
+            <uibi:EntityMetadata DisplayName="Search for content" EligibleOperations="32" IsCustomEntity="False" Name="Search_for_content">
+              <uibi:EntityMetadata.Metadata>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object" x:Name="__ReferenceID0">
+                  <x:String x:Key="Object">Search_for_content</x:String>
+                  <x:String x:Key="Client">UiPath.Box.IntegrationService.Client.Search_for_contentAPIClient</x:String>
+                  <x:String x:Key="Operation">GetSearch</x:String>
+                  <x:String x:Key="Path">/search</x:String>
+                </scg:Dictionary>
+              </uibi:EntityMetadata.Metadata>
+            </uibi:EntityMetadata>
           </uibi:BusinessEntity.EntityMetadata>
-          <uibi:BusinessEntity.Metadata>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object" x:Name="__ReferenceID0">
-              <x:String x:Key="Object">Search_for_content</x:String>
-              <x:String x:Key="Client">UiPath.Box.IntegrationService.Client.Search_for_contentAPIClient</x:String>
-              <x:String x:Key="Operation">GetSearch</x:String>
-              <x:String x:Key="Path">/search</x:String>
-            </scg:Dictionary>
-          </uibi:BusinessEntity.Metadata>
           <uibi:BusinessEntity.SelectedFields>
             <scg:List x:TypeArguments="uibi:EntityField" Capacity="8">
               <x:Reference>__ReferenceID1</x:Reference>
@@ -3287,10 +3288,10 @@
         <scg:Dictionary x:TypeArguments="uibi:TelemetryGroup, scg:IDictionary(x:String, x:String)" />
       </ubia:Search.TelemetryProperties>
     </ubia:Search>
-    <ui:LogMessage DisplayName="メッセージをログ" sap:VirtualizedContainerService.HintSize="540,141" sap2010:WorkflowViewState.IdRef="LogMessage_6" Message="[String.Join(Environment.NewLine, responseSearch.Select(Function(gs) $&quot;{gs.Name}::{gs.Id}::{If(gs.Shared_link Is Nothing, &quot;&quot;, gs.Shared_link.Url)}&quot;))]" />
-    <ubia:GetFileInfo BusinessEntityName="files" ConfiguredBusinessEntity="Files" ConnectionId="230e9c06-7377-ed11-ac20-0050f29e0988" Connector="uipath-box-box" CrudOperation="Get" DesignConnectionEnabled="True" DisplayName="Get File Info" sap:VirtualizedContainerService.HintSize="540,240" sap2010:WorkflowViewState.IdRef="GetFileInfo_1" UseConnectionService="True">
+    <ui:LogMessage DisplayName="メッセージをログ" sap:VirtualizedContainerService.HintSize="544,150.4" sap2010:WorkflowViewState.IdRef="LogMessage_6" Message="[String.Join(Environment.NewLine, responseSearch.Select(Function(gs) $&quot;{gs.Name}::{gs.Id}::{If(gs.Shared_link Is Nothing, &quot;&quot;, gs.Shared_link.Url)}&quot;))]" />
+    <ubia:GetFileInfo BusinessEntityName="files" ConfiguredBusinessEntity="Files" ConnectionId="b090810c-7d6f-ec11-94f6-dc984004a28b" Connector="uipath-box-box" CrudOperation="Get" DesignConnectionEnabled="True" DisplayName="Get File Info" sap:VirtualizedContainerService.HintSize="544,184.8" sap2010:WorkflowViewState.IdRef="GetFileInfo_1" UseConnectionService="True">
       <ubia:GetFileInfo.BusinessEntity>
-        <uibi:BusinessEntity Name="files">
+        <uibi:BusinessEntity Metadata="{x:Reference __ReferenceID6}" Name="files">
           <uibi:BusinessEntity.AllFields>
             <scg:List x:TypeArguments="uibi:EntityField" Capacity="5">
               <uiisi:OperationEntityField x:TypeArguments="x:String" x:Name="__ReferenceID7" ArgumentDirection="In" ArgumentType="x:String" DataType="String" Description="The ID of the file." DisplayName="File Id" FormDataType="ExpressionTextBox" InArgumentValue="[&quot;964485413004&quot;]" IsChildEntityField="False" IsCustomField="False" IsDefault="False" IsDeletable="True" IsHidden="False" IsIdField="True" IsMandatory="True" IsSelected="False" Location="Undefined" Name="filesId" ShouldFilterOnChange="False">
@@ -3315,16 +3316,17 @@
             </scg:List>
           </uibi:BusinessEntity.AllFields>
           <uibi:BusinessEntity.EntityMetadata>
-            <uibi:EntityMetadata Metadata="{x:Reference __ReferenceID6}" DisplayName="files" EligibleOperations="2" IsCustomEntity="False" Name="files" />
+            <uibi:EntityMetadata DisplayName="files" EligibleOperations="2" IsCustomEntity="False" Name="files">
+              <uibi:EntityMetadata.Metadata>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object" x:Name="__ReferenceID6">
+                  <x:String x:Key="Object">files</x:String>
+                  <x:String x:Key="Client">UiPath.Box.IntegrationService.Client.FilesAPIClient</x:String>
+                  <x:String x:Key="Operation">GetFileByFilesId</x:String>
+                  <x:String x:Key="Path">/files/{filesId}</x:String>
+                </scg:Dictionary>
+              </uibi:EntityMetadata.Metadata>
+            </uibi:EntityMetadata>
           </uibi:BusinessEntity.EntityMetadata>
-          <uibi:BusinessEntity.Metadata>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object" x:Name="__ReferenceID6">
-              <x:String x:Key="Object">files</x:String>
-              <x:String x:Key="Client">UiPath.Box.IntegrationService.Client.FilesAPIClient</x:String>
-              <x:String x:Key="Operation">GetFileByFilesId</x:String>
-              <x:String x:Key="Path">/files/{filesId}</x:String>
-            </scg:Dictionary>
-          </uibi:BusinessEntity.Metadata>
           <uibi:BusinessEntity.SelectedFields>
             <scg:List x:TypeArguments="uibi:EntityField" Capacity="4">
               <x:Reference>__ReferenceID7</x:Reference>
@@ -6450,10 +6452,10 @@
         <scg:Dictionary x:TypeArguments="uibi:TelemetryGroup, scg:IDictionary(x:String, x:String)" />
       </ubia:GetFileInfo.TelemetryProperties>
     </ubia:GetFileInfo>
-    <ui:LogMessage DisplayName="メッセージをログ" sap:VirtualizedContainerService.HintSize="540,141" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[$&quot;Shared_link.&#xA;Download_url={fileInfo.Shared_link.Download_url}&#xA;Url={fileInfo.Shared_link.Url}&#xA;Vanity_url={fileInfo.Shared_link.Vanity_url}&#xA;Access={fileInfo.Shared_link.Access.Value}&#xA;Unshared_at={fileInfo.Shared_link.Unshared_at}&#xA;Vanity_name={fileInfo.Shared_link.Vanity_name}&#xA;Vanity_url={fileInfo.Shared_link.Vanity_url}&#xA;&quot;]" />
-    <ubia:InvokeMethod BusinessEntityName="Get shared link for file" ConfiguredBusinessEntity="" ConnectionId="230e9c06-7377-ed11-ac20-0050f29e0988" Connector="uipath-box-box" CrudOperation="Action" DesignConnectionEnabled="True" DisplayName="Invoke Method" sap:VirtualizedContainerService.HintSize="540,292" sap2010:WorkflowViewState.IdRef="InvokeMethod_1" UseConnectionService="True">
+    <ui:LogMessage DisplayName="メッセージをログ" sap:VirtualizedContainerService.HintSize="544,150.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[$&quot;Shared_link.&#xA;Download_url={fileInfo.Shared_link.Download_url}&#xA;Url={fileInfo.Shared_link.Url}&#xA;Vanity_url={fileInfo.Shared_link.Vanity_url}&#xA;Access={fileInfo.Shared_link.Access.Value}&#xA;Unshared_at={fileInfo.Shared_link.Unshared_at}&#xA;Vanity_name={fileInfo.Shared_link.Vanity_name}&#xA;Vanity_url={fileInfo.Shared_link.Vanity_url}&#xA;&quot;]" />
+    <ubia:InvokeMethod BusinessEntityName="Get shared link for file" ConfiguredBusinessEntity="" ConnectionId="b090810c-7d6f-ec11-94f6-dc984004a28b" Connector="uipath-box-box" CrudOperation="Action" DesignConnectionEnabled="True" DisplayName="Invoke Method" sap:VirtualizedContainerService.HintSize="544,236" sap2010:WorkflowViewState.IdRef="InvokeMethod_1" UseConnectionService="True">
       <ubia:InvokeMethod.BusinessEntity>
-        <uibi:BusinessEntity Name="Get_shared_link_for_file">
+        <uibi:BusinessEntity Metadata="{x:Reference __ReferenceID9}" Name="Get_shared_link_for_file">
           <uibi:BusinessEntity.AllFields>
             <scg:List x:TypeArguments="uibi:EntityField" Capacity="2">
               <uiisi:OperationEntityField x:TypeArguments="x:String" x:Name="__ReferenceID10" ArgumentDirection="In" ArgumentType="x:String" DataType="String" Description="The file _ id" DisplayName="File_id" FormDataType="ExpressionTextBox" InArgumentValue="964485413004" IsChildEntityField="False" IsCustomField="False" IsDefault="False" IsDeletable="True" IsHidden="False" IsIdField="False" IsMandatory="True" IsSelected="False" Location="Undefined" Name="file_id" ShouldFilterOnChange="False">
@@ -6475,16 +6477,17 @@
             </scg:List>
           </uibi:BusinessEntity.AllFields>
           <uibi:BusinessEntity.EntityMetadata>
-            <uibi:EntityMetadata Metadata="{x:Reference __ReferenceID9}" DisplayName="Get shared link for file" EligibleOperations="32" IsCustomEntity="False" Name="Get_shared_link_for_file" />
+            <uibi:EntityMetadata DisplayName="Get shared link for file" EligibleOperations="32" IsCustomEntity="False" Name="Get_shared_link_for_file">
+              <uibi:EntityMetadata.Metadata>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object" x:Name="__ReferenceID9">
+                  <x:String x:Key="Object">Get_shared_link_for_file</x:String>
+                  <x:String x:Key="Client">UiPath.Box.IntegrationService.Client.Get_shared_link_for_fileAPIClient</x:String>
+                  <x:String x:Key="Operation">GetFilesGet_shared_link</x:String>
+                  <x:String x:Key="Path">/files/{file_id}/get_shared_link</x:String>
+                </scg:Dictionary>
+              </uibi:EntityMetadata.Metadata>
+            </uibi:EntityMetadata>
           </uibi:BusinessEntity.EntityMetadata>
-          <uibi:BusinessEntity.Metadata>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object" x:Name="__ReferenceID9">
-              <x:String x:Key="Object">Get_shared_link_for_file</x:String>
-              <x:String x:Key="Client">UiPath.Box.IntegrationService.Client.Get_shared_link_for_fileAPIClient</x:String>
-              <x:String x:Key="Operation">GetFilesGet_shared_link</x:String>
-              <x:String x:Key="Path">/files/{file_id}/get_shared_link</x:String>
-            </scg:Dictionary>
-          </uibi:BusinessEntity.Metadata>
           <uibi:BusinessEntity.SelectedFields>
             <scg:List x:TypeArguments="uibi:EntityField" Capacity="4">
               <x:Reference>__ReferenceID10</x:Reference>
@@ -6516,8 +6519,8 @@
         <scg:Dictionary x:TypeArguments="uibi:TelemetryGroup, scg:IDictionary(x:String, x:String)" />
       </ubia:InvokeMethod.TelemetryProperties>
     </ubia:InvokeMethod>
-    <ui:LogMessage DisplayName="メッセージをログ" sap:VirtualizedContainerService.HintSize="540,141" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[$&quot;Shared_link.&#xA;Download_url={response.Shared_link.Download_url}&#xA;Url={response.Shared_link.Url}&#xA;Vanity_url={response.Shared_link.Vanity_url}&#xA;Access={response.Shared_link.Access.Value}&#xA;Unshared_at={response.Shared_link.Unshared_at}&#xA;Vanity_name={response.Shared_link.Vanity_name}&#xA;Vanity_url={response.Shared_link.Vanity_url}&#xA;&quot;]" />
-    <Assign DisplayName="代入" sap:VirtualizedContainerService.HintSize="540,61" sap2010:WorkflowViewState.IdRef="Assign_1">
+    <ui:LogMessage DisplayName="メッセージをログ" sap:VirtualizedContainerService.HintSize="544,150.4" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[$&quot;Shared_link.&#xA;Download_url={response.Shared_link.Download_url}&#xA;Url={response.Shared_link.Url}&#xA;Vanity_url={response.Shared_link.Vanity_url}&#xA;Access={response.Shared_link.Access.Value}&#xA;Unshared_at={response.Shared_link.Unshared_at}&#xA;Vanity_name={response.Shared_link.Vanity_name}&#xA;Vanity_url={response.Shared_link.Vanity_url}&#xA;&quot;]" />
+    <Assign DisplayName="代入" sap:VirtualizedContainerService.HintSize="544,69.6" sap2010:WorkflowViewState.IdRef="Assign_1">
       <Assign.To>
         <OutArgument x:TypeArguments="ubic:ReplaceFilesAdd_shared_linkRequestShared_link">[request.Shared_link]</OutArgument>
       </Assign.To>
@@ -6525,7 +6528,7 @@
         <InArgument x:TypeArguments="ubic:ReplaceFilesAdd_shared_linkRequestShared_link">[New ReplaceFilesAdd_shared_linkRequestShared_link]</InArgument>
       </Assign.Value>
     </Assign>
-    <Assign DisplayName="代入" sap:VirtualizedContainerService.HintSize="540,61" sap2010:WorkflowViewState.IdRef="Assign_2">
+    <Assign DisplayName="代入" sap:VirtualizedContainerService.HintSize="544,69.6" sap2010:WorkflowViewState.IdRef="Assign_2">
       <Assign.To>
         <OutArgument x:TypeArguments="s:Nullable(ubic:ReplaceFilesAdd_shared_linkRequestShared_linkAccess)">[request.Shared_link.Access]</OutArgument>
       </Assign.To>
@@ -6533,15 +6536,15 @@
         <InArgument x:TypeArguments="s:Nullable(ubic:ReplaceFilesAdd_shared_linkRequestShared_linkAccess)">[ReplaceFilesAdd_shared_linkRequestShared_linkAccess.Company]</InArgument>
       </Assign.Value>
     </Assign>
-    <ui:CommentOut DisplayName="無効化されたアクティビティ" sap:VirtualizedContainerService.HintSize="540,386" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+    <ui:CommentOut DisplayName="無効化されたアクティビティ" sap:VirtualizedContainerService.HintSize="544,412.8" sap2010:WorkflowViewState.IdRef="CommentOut_2">
       <ui:CommentOut.Body>
-        <Sequence DisplayName="無視されたアクティビティ" sap:VirtualizedContainerService.HintSize="462,304" sap2010:WorkflowViewState.IdRef="Sequence_3">
+        <Sequence DisplayName="無視されたアクティビティ" sap:VirtualizedContainerService.HintSize="462.4,332.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Assign sap2010:Annotation.AnnotationText="有効期限(Unshared_at)はDateTimeOffsetのインスタンスを指定すればよいはずだが、API呼び出し時にinvalid data type でエラーになる&#xA;JSONでありがちな時刻データのシリアライズの実装がちゃんとできていないというバグではないかと推測する。&#xA;Addだけでなく↓のようにUpdateでも同じエラーになるので、IntegrationServiceのBoxでは2022/12/9時点では有効期限がある共有リンクは作成できないことになる。&#xD;&#xA;直接通信版の方では未確認。" DisplayName="代入" sap:VirtualizedContainerService.HintSize="400,193" sap2010:WorkflowViewState.IdRef="Assign_4">
+          <Assign sap2010:Annotation.AnnotationText="有効期限(Unshared_at)はDateTimeOffsetのインスタンスを指定すればよいはずだが、API呼び出し時にinvalid data type でエラーになる&#xA;JSONでありがちな時刻データのシリアライズの実装がちゃんとできていないというバグではないかと推測する。&#xA;Addだけでなく↓のようにUpdateでも同じエラーになるので、IntegrationServiceのBoxでは2022/12/9時点では有効期限がある共有リンクは作成できないことになる。&#xA;直接通信版の方では未確認。" DisplayName="代入" sap:VirtualizedContainerService.HintSize="400,209.6" sap2010:WorkflowViewState.IdRef="Assign_4">
             <Assign.To>
               <OutArgument x:TypeArguments="s:Nullable(s:DateTimeOffset)">[request.Shared_link.Unshared_at]</OutArgument>
             </Assign.To>
@@ -6557,9 +6560,9 @@
         </Sequence>
       </ui:CommentOut.Body>
     </ui:CommentOut>
-    <ubia:InvokeMethod BusinessEntityName="Add shared link to file" ConfiguredBusinessEntity="" ConnectionId="230e9c06-7377-ed11-ac20-0050f29e0988" Connector="uipath-box-box" CrudOperation="Action" DesignConnectionEnabled="True" DisplayName="Invoke Method" sap:VirtualizedContainerService.HintSize="540,343" sap2010:WorkflowViewState.IdRef="InvokeMethod_4" UseConnectionService="True">
+    <ubia:InvokeMethod BusinessEntityName="Add shared link to file" ConfiguredBusinessEntity="" ConnectionId="b090810c-7d6f-ec11-94f6-dc984004a28b" Connector="uipath-box-box" CrudOperation="Action" DesignConnectionEnabled="True" DisplayName="Invoke Method" sap:VirtualizedContainerService.HintSize="544,288" sap2010:WorkflowViewState.IdRef="InvokeMethod_4" UseConnectionService="True">
       <ubia:InvokeMethod.BusinessEntity>
-        <uibi:BusinessEntity Name="Add_shared_link_to_file">
+        <uibi:BusinessEntity Metadata="{x:Reference __ReferenceID13}" Name="Add_shared_link_to_file">
           <uibi:BusinessEntity.AllFields>
             <scg:List x:TypeArguments="uibi:EntityField" Capacity="3">
               <uiisi:OperationEntityField x:TypeArguments="ubic:ReplaceFilesAdd_shared_linkRequest" x:Name="__ReferenceID14" ArgumentDirection="In" ArgumentType="ubic:ReplaceFilesAdd_shared_linkRequest" DataType="ReplaceFilesAdd_shared_linkRequest" Description="The object body" DisplayName="Body" FormDataType="ExpressionTextBox" InArgumentValue="[request]" IsChildEntityField="False" IsCustomField="False" IsDefault="False" IsDeletable="True" IsHidden="False" IsIdField="False" IsMandatory="True" IsSelected="False" Location="Undefined" Name="body" ShouldFilterOnChange="False">
@@ -6589,16 +6592,17 @@
             </scg:List>
           </uibi:BusinessEntity.AllFields>
           <uibi:BusinessEntity.EntityMetadata>
-            <uibi:EntityMetadata Metadata="{x:Reference __ReferenceID13}" DisplayName="Add shared link to file" EligibleOperations="32" IsCustomEntity="False" Name="Add_shared_link_to_file" />
+            <uibi:EntityMetadata DisplayName="Add shared link to file" EligibleOperations="32" IsCustomEntity="False" Name="Add_shared_link_to_file">
+              <uibi:EntityMetadata.Metadata>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object" x:Name="__ReferenceID13">
+                  <x:String x:Key="Object">Add_shared_link_to_file</x:String>
+                  <x:String x:Key="Client">UiPath.Box.IntegrationService.Client.Add_shared_link_to_fileAPIClient</x:String>
+                  <x:String x:Key="Operation">ReplaceFilesAdd_shared_link</x:String>
+                  <x:String x:Key="Path">/files/{file_id}/add_shared_link</x:String>
+                </scg:Dictionary>
+              </uibi:EntityMetadata.Metadata>
+            </uibi:EntityMetadata>
           </uibi:BusinessEntity.EntityMetadata>
-          <uibi:BusinessEntity.Metadata>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object" x:Name="__ReferenceID13">
-              <x:String x:Key="Object">Add_shared_link_to_file</x:String>
-              <x:String x:Key="Client">UiPath.Box.IntegrationService.Client.Add_shared_link_to_fileAPIClient</x:String>
-              <x:String x:Key="Operation">ReplaceFilesAdd_shared_link</x:String>
-              <x:String x:Key="Path">/files/{file_id}/add_shared_link</x:String>
-            </scg:Dictionary>
-          </uibi:BusinessEntity.Metadata>
           <uibi:BusinessEntity.SelectedFields>
             <scg:List x:TypeArguments="uibi:EntityField" Capacity="4">
               <x:Reference>__ReferenceID14</x:Reference>
@@ -9726,8 +9730,8 @@
         <scg:Dictionary x:TypeArguments="uibi:TelemetryGroup, scg:IDictionary(x:String, x:String)" />
       </ubia:InvokeMethod.TelemetryProperties>
     </ubia:InvokeMethod>
-    <ui:LogMessage DisplayName="メッセージをログ" sap:VirtualizedContainerService.HintSize="540,141" sap2010:WorkflowViewState.IdRef="LogMessage_4" Message="[$&quot;Shared_link.&#xA;Download_url={responseAdd.Shared_link.Download_url}&#xA;Url={responseAdd.Shared_link.Url}&#xA;Vanity_url={responseAdd.Shared_link.Vanity_url}&#xA;Access={responseAdd.Shared_link.Access.Value}&#xA;Unshared_at={responseAdd.Shared_link.Unshared_at}&#xA;Vanity_name={responseAdd.Shared_link.Vanity_name}&#xA;Vanity_url={responseAdd.Shared_link.Vanity_url}&#xA;&quot;]" />
-    <Assign DisplayName="代入" sap:VirtualizedContainerService.HintSize="540,61" sap2010:WorkflowViewState.IdRef="Assign_8">
+    <ui:LogMessage DisplayName="メッセージをログ" sap:VirtualizedContainerService.HintSize="544,150.4" sap2010:WorkflowViewState.IdRef="LogMessage_4" Message="[$&quot;Shared_link.&#xA;Download_url={responseAdd.Shared_link.Download_url}&#xA;Url={responseAdd.Shared_link.Url}&#xA;Vanity_url={responseAdd.Shared_link.Vanity_url}&#xA;Access={responseAdd.Shared_link.Access.Value}&#xA;Unshared_at={responseAdd.Shared_link.Unshared_at}&#xA;Vanity_name={responseAdd.Shared_link.Vanity_name}&#xA;Vanity_url={responseAdd.Shared_link.Vanity_url}&#xA;&quot;]" />
+    <Assign DisplayName="代入" sap:VirtualizedContainerService.HintSize="544,69.6" sap2010:WorkflowViewState.IdRef="Assign_8">
       <Assign.To>
         <OutArgument x:TypeArguments="ubic:ReplaceFilesUpdate_shared_linkRequestShared_link">[requestUpdate.Shared_link]</OutArgument>
       </Assign.To>
@@ -9735,15 +9739,15 @@
         <InArgument x:TypeArguments="ubic:ReplaceFilesUpdate_shared_linkRequestShared_link">[New ReplaceFilesUpdate_shared_linkRequestShared_link]</InArgument>
       </Assign.Value>
     </Assign>
-    <ui:CommentOut DisplayName="無効化されたアクティビティ" sap:VirtualizedContainerService.HintSize="540,254" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+    <ui:CommentOut DisplayName="無効化されたアクティビティ" sap:VirtualizedContainerService.HintSize="544,272.8" sap2010:WorkflowViewState.IdRef="CommentOut_3">
       <ui:CommentOut.Body>
-        <Sequence DisplayName="無視されたアクティビティ" sap:VirtualizedContainerService.HintSize="462,172" sap2010:WorkflowViewState.IdRef="Sequence_4">
+        <Sequence DisplayName="無視されたアクティビティ" sap:VirtualizedContainerService.HintSize="462.4,192.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Assign DisplayName="代入" sap:VirtualizedContainerService.HintSize="400,61" sap2010:WorkflowViewState.IdRef="Assign_7">
+          <Assign DisplayName="代入" sap:VirtualizedContainerService.HintSize="400,69.6" sap2010:WorkflowViewState.IdRef="Assign_7">
             <Assign.To>
               <OutArgument x:TypeArguments="s:Nullable(s:DateTimeOffset)">[requestUpdate.Shared_link.Unshared_at]</OutArgument>
             </Assign.To>
@@ -9754,7 +9758,7 @@
         </Sequence>
       </ui:CommentOut.Body>
     </ui:CommentOut>
-    <Assign DisplayName="代入" sap:VirtualizedContainerService.HintSize="540,61" sap2010:WorkflowViewState.IdRef="Assign_9">
+    <Assign DisplayName="代入" sap:VirtualizedContainerService.HintSize="544,69.6" sap2010:WorkflowViewState.IdRef="Assign_9">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[requestUpdate.Shared_link.Vanity_name]</OutArgument>
       </Assign.To>
@@ -9762,9 +9766,9 @@
         <InArgument x:TypeArguments="x:String">sharedlinktest</InArgument>
       </Assign.Value>
     </Assign>
-    <ubia:InvokeMethod BusinessEntityName="Update shared link on file" ConfiguredBusinessEntity="" ConnectionId="230e9c06-7377-ed11-ac20-0050f29e0988" Connector="uipath-box-box" CrudOperation="Action" DesignConnectionEnabled="True" DisplayName="Invoke Method" sap:VirtualizedContainerService.HintSize="540,343" sap2010:WorkflowViewState.IdRef="InvokeMethod_3" UseConnectionService="True">
+    <ubia:InvokeMethod BusinessEntityName="Update shared link on file" ConfiguredBusinessEntity="" ConnectionId="b090810c-7d6f-ec11-94f6-dc984004a28b" Connector="uipath-box-box" CrudOperation="Action" DesignConnectionEnabled="True" DisplayName="Invoke Method" sap:VirtualizedContainerService.HintSize="544,288" sap2010:WorkflowViewState.IdRef="InvokeMethod_3" UseConnectionService="True">
       <ubia:InvokeMethod.BusinessEntity>
-        <uibi:BusinessEntity Name="Update_shared_link_on_file">
+        <uibi:BusinessEntity Metadata="{x:Reference __ReferenceID17}" Name="Update_shared_link_on_file">
           <uibi:BusinessEntity.AllFields>
             <scg:List x:TypeArguments="uibi:EntityField" Capacity="3">
               <uiisi:OperationEntityField x:TypeArguments="ubic:ReplaceFilesUpdate_shared_linkRequest" x:Name="__ReferenceID18" ArgumentDirection="In" ArgumentType="ubic:ReplaceFilesUpdate_shared_linkRequest" DataType="ReplaceFilesUpdate_shared_linkRequest" Description="The object body" DisplayName="Body" FormDataType="ExpressionTextBox" InArgumentValue="[requestUpdate]" IsChildEntityField="False" IsCustomField="False" IsDefault="False" IsDeletable="True" IsHidden="False" IsIdField="False" IsMandatory="True" IsSelected="False" Location="Undefined" Name="body" ShouldFilterOnChange="False">
@@ -9794,16 +9798,17 @@
             </scg:List>
           </uibi:BusinessEntity.AllFields>
           <uibi:BusinessEntity.EntityMetadata>
-            <uibi:EntityMetadata Metadata="{x:Reference __ReferenceID17}" DisplayName="Update shared link on file" EligibleOperations="32" IsCustomEntity="False" Name="Update_shared_link_on_file" />
+            <uibi:EntityMetadata DisplayName="Update shared link on file" EligibleOperations="32" IsCustomEntity="False" Name="Update_shared_link_on_file">
+              <uibi:EntityMetadata.Metadata>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object" x:Name="__ReferenceID17">
+                  <x:String x:Key="Object">Update_shared_link_on_file</x:String>
+                  <x:String x:Key="Client">UiPath.Box.IntegrationService.Client.Update_shared_link_on_fileAPIClient</x:String>
+                  <x:String x:Key="Operation">ReplaceFilesUpdate_shared_link</x:String>
+                  <x:String x:Key="Path">/files/{file_id}/update_shared_link</x:String>
+                </scg:Dictionary>
+              </uibi:EntityMetadata.Metadata>
+            </uibi:EntityMetadata>
           </uibi:BusinessEntity.EntityMetadata>
-          <uibi:BusinessEntity.Metadata>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object" x:Name="__ReferenceID17">
-              <x:String x:Key="Object">Update_shared_link_on_file</x:String>
-              <x:String x:Key="Client">UiPath.Box.IntegrationService.Client.Update_shared_link_on_fileAPIClient</x:String>
-              <x:String x:Key="Operation">ReplaceFilesUpdate_shared_link</x:String>
-              <x:String x:Key="Path">/files/{file_id}/update_shared_link</x:String>
-            </scg:Dictionary>
-          </uibi:BusinessEntity.Metadata>
           <uibi:BusinessEntity.SelectedFields>
             <scg:List x:TypeArguments="uibi:EntityField" Capacity="4">
               <x:Reference>__ReferenceID18</x:Reference>
@@ -9837,6 +9842,6 @@
         <scg:Dictionary x:TypeArguments="uibi:TelemetryGroup, scg:IDictionary(x:String, x:String)" />
       </ubia:InvokeMethod.TelemetryProperties>
     </ubia:InvokeMethod>
-    <ui:LogMessage DisplayName="メッセージをログ" sap:VirtualizedContainerService.HintSize="540,141" sap2010:WorkflowViewState.IdRef="LogMessage_5" Message="[$&quot;Shared_link.&#xA;Download_url={responseUpdate.Shared_link.Download_url}&#xA;Url={responseUpdate.Shared_link.Url}&#xA;Vanity_url={responseUpdate.Shared_link.Vanity_url}&#xA;Access={responseUpdate.Shared_link.Access.Value}&#xA;Unshared_at={responseUpdate.Shared_link.Unshared_at}&#xA;Vanity_name={responseUpdate.Shared_link.Vanity_name}&#xA;&quot;]" />
+    <ui:LogMessage DisplayName="メッセージをログ" sap:VirtualizedContainerService.HintSize="544,150.4" sap2010:WorkflowViewState.IdRef="LogMessage_5" Message="[$&quot;Shared_link.&#xA;Download_url={responseUpdate.Shared_link.Download_url}&#xA;Url={responseUpdate.Shared_link.Url}&#xA;Vanity_url={responseUpdate.Shared_link.Vanity_url}&#xA;Access={responseUpdate.Shared_link.Access.Value}&#xA;Unshared_at={responseUpdate.Shared_link.Unshared_at}&#xA;Vanity_name={responseUpdate.Shared_link.Vanity_name}&#xA;&quot;]" />
   </Sequence>
 </Activity>
